@@ -1,0 +1,32 @@
+Basic model: permanent immunity, no inflow/ outflow, not closed system
+
+Start conditions
+healthy = 18.000.000
+infected_fun = 0
+immune = 0
+vaccinated = 0
+time = 0 # in days
+recover_rate =
+contamination_rate = 2
+
+#functions
+infected_func = 
+healthy_func = 
+
+healthy_diff = -contamination_rate * healthy * infected_func
+infected_diff = contamination_rate * healthy * infected_func
+immune_diff = recoverspeed * infected_func
+
+
+
+infected = infected people - deaths
+susceptible(t) = 
+
+
+Cured R(t) = c * infected function (c = constant)
+infected = R**t
+R = average infections per person, t = time
+Cured R(t) = c * R**t
+
+
+
